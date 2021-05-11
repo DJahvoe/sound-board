@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Sound Board</title>
+	</head>
+	<body>
+		<div class="overlay show"></div>
+		<button id="nav">Show</button>
+		<canvas id="audio_visual" height="500" width="500"></canvas>
+		<audio id="source" preload="none" controls src="./sora-suisei.mp3"></audio>
+
+		<div class="container">
+			<button
+				data-imageurl="https://i1.sndcdn.com/artworks-87WM3hDFWeyRyGJI-4hvAGQ-t500x500.jpg"
+				data-link="hoshimachi-suisei.mp3"
+			>
+				Next Color Planet
+			</button>
+			<button
+				data-imageurl="https://i.ytimg.com/vi/idmbA6U2kxw/maxresdefault.jpg"
+				data-link="tokino-sora.mp3"
+			>
+				Venom
+			</button>
+			<button
+				data-imageurl="https://i.ytimg.com/vi/uLMy1kWaOXY/maxresdefault.jpg"
+				data-link="minato-aqua.mp3"
+			>
+				Dadadatenshi
+			</button>
+			<button
+				data-imageurl="https://i.ytimg.com/vi/OnOwi8jTa6Q/maxresdefault.jpg"
+				data-link="shirakami-fubuki.mp3"
+			>
+				Say! Fanfare
+			</button>
+			<button
+				data-imageurl="https://scontent.fsub7-1.fna.fbcdn.net/v/t1.6435-9/110195368_323863639000721_7742498909437916173_n.png?_nc_cat=110&ccb=1-3&_nc_sid=973b4a&_nc_aid=0&_nc_ohc=_Cd2WHgpUJgAX8xktDL&_nc_ht=scontent.fsub7-1.fna&oh=84b115972887891c348ddcf09ec4964c&oe=6096FDF1"
+				data-link="sora-suisei.mp3"
+			>
+				Hanamuke no Tori
+			</button>
+		</div>
+
+		<div class="progress-bar"></div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.0-0/dat.gui.min.js"
+			integrity="sha512-Mbj6WjDnKyl8y9cUOkjHRZjMTzUSoe74PZESO6J42159mZN5SxOWYG4J7Xbn/368bPCOWF5dR3aPKOqoqFFdLQ=="
+			crossorigin="anonymous"
+		></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
